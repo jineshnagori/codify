@@ -23282,4 +23282,8 @@ nav {
 .simple-menu {
     min-width: auto !important;
 }
-/*# sourceMappingURL=color-6.css.map */
+@media only screen and (max-width: 767px) {
+    .hero {
+        display: none;
+    }
+}
