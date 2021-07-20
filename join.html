@@ -44,8 +44,52 @@
     </div>
     <!--loader end-->
 
-    <!-- Contact -->
-    <section class="agency format" id="signup">
+    <!-- login -->
+    <section class="agency format first_box" id="login">
+        <div class="container" id="cards">
+            <div class="text-center">
+                <div class="format-container">
+                    <div class="format-head-text">
+                        <a href="index.html"><h2>Log In</h2></a>
+                    </div>
+                    <div class="format-sub-text">
+                        <p class="about-para">
+                            Lorem ipsum dolor sit amet, consectetur sed do eiusmod tempor incididunt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <form>
+                <div class="row d-flex">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input style="height: 50px;" class="form-control" id="username" type="text" placeholder="User Name *">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input style="height: 50px;" class="form-control" id="Email" type="email" placeholder="Email *">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input style="height: 50px;" class="form-control" id="Password" type="password" placeholder="Password *">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input style="height: 50px;" class="form-control" id="Confirm Password" type="password" placeholder="Confirm Password *">
+                        </div>
+                    </div>
+                </div>
+                <a class="btn btn-default primary-btn event-btn">Log In</a>
+                <span style="display: flow-root; padding: 10px 0 10px 0;">Not a member yet ? <a id="register">Join us</a></span>
+            </form>
+        </div>
+    </section>
+
+    <!-- Signup -->
+    <section class="agency format second_box hide-display" id="signup">
         <div class="container" id="cards">
             <div class="text-center">
                 <div class="format-container">
@@ -83,7 +127,7 @@
                     </div>
                 </div>
                 <a class="btn btn-default primary-btn event-btn">Sign Up</a>
-                <span style="display: flow-root; padding: 10px 0 10px 0;">Already a member ? <a href="login.html">Go and log in</a></span>
+                <span style="display: flow-root; padding: 10px 0 10px 0;">Already a member ? <a id="already-member">Go and log in</a></span>
             </form>
         </div>
     </section>
@@ -97,7 +141,26 @@
             padding-top: 15px;
             padding-bottom: 15px;
         }
+        .hide-display {
+            display: none;
+        }
     </style>
+    <script>
+        const regbtn = document.getElementById('register')
+        const scndbox = document.querySelector('.second_box')
+        const alreadyMemeberbtn = document.getElementById('already-member')
+        const firstbox = document.querySelector('.first_box')
+
+        regbtn.addEventListener('click', ()=>{
+            scndbox.classList.remove('hide-display')
+            firstbox.classList.add('hide-display')
+        })
+
+        alreadyMemeberbtn.addEventListener('click', ()=>{
+            scndbox.classList.add('hide-display')
+            firstbox.classList.remove('hide-display')
+        })
+    </script>
     <!-- Contact End -->
 
     
