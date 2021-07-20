@@ -23286,4 +23286,7 @@ nav {
     .hero {
         display: none;
     }
+    .center-text {
+        margin: 0 !important;
+    }
 }

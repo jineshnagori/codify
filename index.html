@@ -79,8 +79,8 @@
         <div class="agency bg">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="center-text">
+                    <div class="col-lg-5">
+                        <div class="center-text pt-10">
                             <div>
                                 <div class="header-text">
                                     <h1 class="text-uppercase"><span class="bold-text">Codify</span></h1>
@@ -91,15 +91,128 @@
                                 <div class="link-horizontal">
                                     <ul>
                                         <li>
-                                            <a href="join.html" class="btn btn-default primary-btn event-btn">Join Now</a>
+                                            <a href="#service" class="btn btn-default primary-btn event-btn">Explore</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <img class="hero img-fluid" style="padding-top: 140px;" src="assets/images/slider/hero.png">
+                    <div class="col-lg-7">
+                        <div class="center-text m-center-text">
+                            <div class="agency format first_box" id="login">
+                                <div class="container card" id="cards" data-aos="fade-left" data-aos-duration="500">
+                                    <div class="text-center">
+                                        <div class="format-container">
+                                            <div class="format-head-text">
+                                                <a href="index.html"><h2>Log In</h2></a>
+                                            </div>
+                                            <div class="format-sub-text">
+                                                <p class="about-para" style="color: #464545;">
+                                                    To keep connected with us please login with your personal info.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <form>
+                                        <div class="row d-flex">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input style="height: 50px;" class="form-control" id="username" type="text" placeholder="User Name *">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input style="height: 50px;" class="form-control" id="Email" type="email" placeholder="Email *">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input style="height: 50px;" class="form-control" id="Password" type="password" placeholder="Password *">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input style="height: 50px;" class="form-control" id="Password" type="password" placeholder="Confirm Password *">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="btn btn-default primary-btn event-btn">Log In</a>
+                                        <span style="display: flow-root; padding: 10px 0 10px 0;">Not a member yet ? <a id="register">Join us</a></span>
+                                    </form>
+                                </div>
+                            </div>
+    
+                            <!-- Signup -->
+                            <div class="agency format second_box hide-display" id="signup">
+                                <div class="container card" id="cards" data-aos="fade-down" data-aos-duration="500">
+                                    <div class="text-center">
+                                        <div class="format-container">
+                                            <div class="format-head-text">
+                                                <a href="index.html"><h2>Sign Up</h2></a>
+                                            </div>
+                                            <div class="format-sub-text">
+                                                <p class="about-para" style="color: #464545;">
+                                                    Enter your personal details and start journey with us.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <form>
+                                        <div class="row d-flex">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input style="height: 50px;" class="form-control" id="name" type="text" placeholder="Name *">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input style="height: 50px;" class="form-control" id="username" type="text" placeholder="User Name *">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input style="height: 50px;" class="form-control" id="Email" type="email" placeholder="Email *">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input style="height: 50px;" class="form-control" id="Password" type="password" placeholder="Password *">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="btn btn-default primary-btn event-btn">Sign Up</a>
+                                        <span style="display: flow-root; padding: 10px 0 10px 0;">Already a member ? <a id="already-member">Log in</a></span>
+                                    </form>
+                                </div>
+                            </div>
+                            <style>
+                                #cards {
+                                    border-radius: 20px;
+                                    padding-top: 15px;
+                                    padding-bottom: 15px;
+                                }
+                                .hide-display {
+                                    display: none;
+                                }
+                            </style>
+                            <script>
+                                const regbtn = document.getElementById('register')
+                                const scndbox = document.querySelector('.second_box')
+                                const alreadyMemeberbtn = document.getElementById('already-member')
+                                const firstbox = document.querySelector('.first_box')
+    
+                                regbtn.addEventListener('click', ()=>{
+                                    scndbox.classList.remove('hide-display')
+                                    firstbox.classList.add('hide-display')
+                                })
+    
+                                alreadyMemeberbtn.addEventListener('click', ()=>{
+                                    scndbox.classList.add('hide-display')
+                                    firstbox.classList.remove('hide-display')
+                                })
+                            </script>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -518,17 +631,6 @@
         </div>
     </section>
     <!-- Contact End -->
-    <style>
-        #cards {
-            max-width: 675px;
-            border-radius: 20px;
-            background: #ffffff;
-            box-shadow:  20px 20px 60px #d9d9d9,
-                        -20px -20px 60px #ffffff;
-            padding-top: 15px;
-            padding-bottom: 15px;
-        }
-    </style>
 
     <!--footer start-->
     <div class="agency copyright">
