@@ -1701,6 +1701,7 @@ body.menu-on:before {
 header {
     z-index: 600;
     width: 100%;
+    background-color: #10266b;
 }
 header.nav-lg {
     padding: 2rem 1rem;
@@ -8402,7 +8403,7 @@ header nav .menu-arrow {
     }
 }
 nav {
-    padding: 30px 0;
+    background-color: #10266b;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -8425,4 +8426,167 @@ nav {
     .center-text {
         margin: 0 !important;
     }
+}
+@media only screen and (max-width: 991px) {
+    header {
+        background-color: #10266b;
+    }
+    .search {
+        margin-top: 20px;
+    }
+}
+a #user {
+    height: 50px;
+    padding-left: 3px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #10266b;
+    border-radius: 50px;
+    font-size: 25px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+a:hover #user {
+    background-color: #fff;
+    color: #10266b;
+    border: 1px solid #10266b;
+}
+
+a #heart {
+    height: 30px;
+    width: 30px;
+    padding-left: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #10266b;
+    border-radius: 50px;
+    font-size: 15px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+a:hover #heart {
+    background-color: #fff;
+    color: #10266b;
+    border: 1px solid #10266b;
+}
+
+.search {
+    background: #fff;
+    padding: 12px 16px 12px 48px;
+    position: relative;
+    display: table;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px 0px rgba(18, 22, 33, 0.3);
+    transition: background 0.1s ease, transform 0.1s ease, padding 0.5s ease 0.1s;
+}
+
+.search .bar {
+    position: absolute;
+    left: 16px;
+    top: 15px;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+}
+.search .bar:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 16px;
+    border-radius: 16px 0 0 16px;
+    background: #10266b;
+    opacity: 0;
+}
+
+.search .bar .icon {
+    flex: 0 0 32px;
+    width: 32px;
+    height: 32px;
+    background: #10266b;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    transform-style: preserve-3d;
+    transform-origin: 0 0;
+    transform: scale(0.8);
+    transition: transform 0.4s ease 0s, background 0.1s ease;
+}
+
+.search .bar .icon:before,
+.search .bar .icon:after {
+    content: "";
+    display: block;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 50%;
+}
+
+.search .bar .icon:before {
+    background: #fff;
+    left: 4px;
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    z-index: 2;
+    transform: rotateY(0deg);
+    transition: background 0.1s ease;
+}
+
+.search .bar .icon i {
+    left: 75%;
+    top: 84%;
+    position: absolute;
+    display: block;
+    transform: rotate(-45deg);
+    transform-origin: 0 0;
+}
+
+.search .bar .icon i:before {
+    content: "";
+    width: 4px;
+    height: 16px;
+    border-radius: 2px;
+    background: #10266b;
+    display: block;
+    transform-origin: 50% 0;
+    transition: transform 0.4s ease 0s, background 0.1s ease;
+}
+
+.search form input,
+.search form span {
+    white-space: pre;
+    font-size: 16px;
+    font-family: inherit;
+    padding: 8px 16px 8px 12px;
+    display: block;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.search form input {
+    color: #10266b;
+    caret-color: #10266b;
+    border: 0;
+    background: 0;
+    outline: none;
+    transition: color 0.1s ease;
+}
+#cards {
+    border-radius: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.hide-display {
+    display: none;
 }

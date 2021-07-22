@@ -243,3 +243,18 @@
     checkWidth();
     $(window).resize(checkWidth);
 })(jQuery);
+
+const regbtn = document.getElementById('register')
+const scndbox = document.querySelector('.second_box')
+const alreadyMemeberbtn = document.getElementById('already-member')
+const firstbox = document.querySelector('.first_box')
+
+regbtn.addEventListener('click', ()=>{
+    scndbox.classList.remove('hide-display')
+    firstbox.classList.add('hide-display')
+})
+
+alreadyMemeberbtn.addEventListener('click', ()=>{
+    scndbox.classList.add('hide-display')
+    firstbox.classList.remove('hide-display')
+})
