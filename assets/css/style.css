@@ -8458,7 +8458,8 @@ a:hover #user {
 a #heart {
     height: 30px;
     width: 30px;
-    padding-left: 3px;
+    padding-left: 2px;
+    padding-top: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
