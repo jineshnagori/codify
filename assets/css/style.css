@@ -8591,3 +8591,16 @@ a:hover #heart {
 .hide-display {
     display: none;
 }
+.hr-img {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+  
+.hr-img:before,
+.hr-img:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #000;
+    margin: auto;
+}
