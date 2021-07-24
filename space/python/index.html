@@ -28,7 +28,7 @@
     <link href="../../assets/css/magnific-popup.css" rel="stylesheet">
 </head>
 
-<body data-offset="50" data-spy="scroll" data-target=".navbar">
+<body id="body-space" data-offset="50" data-spy="scroll" data-target=".navbar">
     <!--loader start-->
     <div class="loader-wrapper">
         <div class="loader">
@@ -46,7 +46,7 @@
     <!--loader end-->
 
     <!-- Nav Start-->
-    <header class="agency nav-fix custom-scroll">
+    <header style="height: 25%;" class="agency nav-fix custom-scroll">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -60,128 +60,141 @@
     </header>
     <!-- Nav end-->
 
-    <!-- Language -->
-    <section class="agency format" id="language">
-        <div style="padding: 70px 0;">
-            <div class="container">
-                <div class="format-container">
-                    <h1 class="hr-img"><img width="100px" src="../../assets/images/langauges/python.png" class="img-fluid"></h1>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 container" data-aos="fade-left" data-aos-duration="500">
-                        <div class="format-sub-text">
-                            <p class="about-para">
-                                Python is a general-purpose interpreted, interactive, object-oriented, and high-level programming language. It was created by Guido van Rossum during 1985- 1990. Like Perl, Python source code is also available under the GNU General Public License (GPL). This tutorial gives enough understanding on Python programming language.
-                            </p>
-                            <a class="btn btn-default primary-btn event-btn">Join Now</a>
-                        </div> 
-                    </div>
-                    <div class="col-lg-6 container" data-aos="fade-left" data-aos-duration="500">
+    <style>
+        #space-card {
+            border-radius: 20px;
+            background: #ffffff;
+            box-shadow:  6px 6px 10px #d0d0d0,
+                        0 0 0 #ffffff;
+            padding: 20px 10px;
+            position: sticky;
+            position: -webkit-sticky;
+        }
+        #project-card {
+            border-radius: 20px;
+            background: #ffffff;
+            box-shadow:  6px 6px 10px #d0d0d0,
+                        0 0 0 #ffffff;
+        }
+        .top-creators {
+            width: 80px;
+            border-radius: 50%;
+            margin: 0 10px;
+        }
+        #engage-card {
+            border-radius: 20px;
+            background: #ffffff;
+            box-shadow:  6px 6px 10px #d0d0d0,
+                        0 0 0 #ffffff;
+            padding: 10px 10px;
+            margin-right: 1%;
+        }
+        #hash-card {
+            border-radius: 20px;
+            background: #ffffff;
+            box-shadow:  6px 6px 10px #d0d0d0,
+                        0 0 0 #ffffff;
+            padding: 5px 10px;
+            margin-right: 1%;
+        }
+        #space {
+            z-index: 999;
+        }
+        .project-img {
+            object-fit: fill;
+            height: 100%;
+            border-radius: 20px;
+        }
+        @media (min-width: 991px) {
+            #body-space {
+                overflow: hidden;
+            }
+        }
+    </style>
+
+    <!-- space -->
+    <section class="agency format" id="space">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 container" id="space-card" data-aos="fade-left" data-aos-duration="500">
+                    <div class="format-sub-text text-center">
+                        <h1 class="hr-img"><img width="70px" src="../../assets/images/langauges/python.png" class="img-fluid"></h1>
+                        <p class="about-para">
+                            Python is a general-purpose interpreted, interactive, object-oriented, and high-level programming language. It was created by Guido van Rossum during 1985- 1990.
+                        </p>
                         <canvas id="myChart"></canvas>
                         <p class="about-para">
-                            Active Members : 1000
+                            Members : 1000
                         </p>
+                        <a class="btn btn-default primary-btn event-btn">Join Now</a>
+                    </div> 
+                </div>
+                <div class="col-lg-9">
+                    <div class="container">
+                        <div class="format-head-text">
+                            <h2 style="padding: 20px 0px;" class="text-white">Python <i class="fa fa-trending"></i></h2>
+                            <span class="text-white" style="padding: 20px 0px;">space/python</span>
+                        </div>
+                        <h6 class="borders-before mb-0" style="padding: 30px 15px 10px 0px;">
+                            <span>Top Creators</span>
+                        </h6>
+                        <div class=" p-0">
+                            <img class="top-creators" class="img-fluid" src="../../assets/images/team/l3-2.png" alt="">
+                            <img class="top-creators" class="img-fluid" src="../../assets/images/team/l3-2.png" alt="">
+                            <img class="top-creators" class="img-fluid" src="../../assets/images/team/l3-2.png" alt="">
+                            <img class="top-creators" class="img-fluid" src="../../assets/images/team/l3-2.png" alt="">
+                        </div>
+                        <h6 class="borders-before mb-0" style="padding: 30px 15px 10px 0px;">
+                            <span>Trending CodeBits</span>
+                        </h6>
+                        <div class="container" id="project-card" data-aos="fade-right" data-aos-duration="500">
+                            <div class="row">
+                                <div class="col-lg-4 p-0">
+                                    <img class="img-fluid project-img" src="../../assets/images/projects/1.jpg" alt="">
+                                </div>
+                                <div class="col-lg-8 p-4">
+                                    <h3 class="pb-2">Tic Tac Toe</h3>
+                                    <p>Simple Multiplayer Tic Tac Toe Game</p>
+                                    <div class="pt-4 pb-2">
+                                        <span id="hash-card" data-aos="fade-right" data-aos-duration="500">
+                                            #sockets
+                                        </span>
+                                        <span id="hash-card" data-aos="fade-right" data-aos-duration="500">
+                                            #threading
+                                        </span>
+                                        <span id="hash-card" data-aos="fade-right" data-aos-duration="500">
+                                            #pygame
+                                        </span>
+                                    </div>
+                                    <div class="pt-4 pb-2">
+                                        <span id="engage-card" data-aos="fade-right" data-aos-duration="500">
+                                            Likes <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                            200k
+                                        </span>
+                                        <span id="engage-card" data-aos="fade-right" data-aos-duration="500">
+                                            Shares <i class="fa fa-share" aria-hidden="true"></i>
+                                            56k
+                                        </span>
+                                        <span id="engage-card" data-aos="fade-right" data-aos-duration="500">
+                                            Comments <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                            6k
+                                        </span>
+                                    </div>
+                                    <ul class="pt-4">
+                                        <b>Features</b>
+                                        <li><span>Beautiful and elegant UI using Figma</span> </li>
+                                        <li><span>Classes Oriented Programming</span></li>
+                                        <li><span>Easy to understand and light weight</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Language End -->
-
-    <!-- Projects -->
-    <section class="agency format" id="projects">
-        <div class="container">
-                <div class="format-container">
-                <h6 class="borders-before">
-                    <span>Trending Projects</span>
-                </h6>
-                <div class="format-head-text">
-                    <h2>Our Top Projects</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 container" id="cards" data-aos="fade-left" data-aos-duration="500">
-                    <div class="text-center">
-                        <img style="padding: 10px 0;" width="500px" height="250px" class="img-fluid" src="../../assets/images/slider/hero.png">
-                    </div>
-                    <div class="row">
-                        <div class="col-6 d-flex justify-content-start">
-                            <h4>Project Name</h4>
-                        </div>
-                        <div class="col-6 d-flex justify-content-end">
-                            <a><i id="heart" class="fa fa-heart"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 container" id="cards" data-aos="fade-left" data-aos-duration="500">
-                    <div class="text-center">
-                        <img style="padding: 10px 0;" width="500px" height="250px" class="img-fluid" src="../../assets/images/slider/hero.png">
-                    </div>
-                    <div class="row">
-                        <div class="col-6 d-flex justify-content-start">
-                            <h4>Project Name</h4>
-                        </div>
-                        <div class="col-6 d-flex justify-content-end">
-                            <a><i id="heart" class="fa fa-heart"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 container" id="cards" data-aos="fade-left" data-aos-duration="500">
-                    <div class="text-center">
-                        <img style="padding: 10px 0;" width="500px" height="250px" class="img-fluid" src="../../assets/images/slider/hero.png">
-                    </div>
-                    <div class="row">
-                        <div class="col-6 d-flex justify-content-start">
-                            <h4>Project Name</h4>
-                        </div>
-                        <div class="col-6 d-flex justify-content-end">
-                            <a><i id="heart" class="fa fa-heart"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 container" id="cards" data-aos="fade-left" data-aos-duration="500">
-                    <div class="text-center">
-                        <img style="padding: 10px 0;" width="500px" height="250px" class="img-fluid" src="../../assets/images/slider/hero.png">
-                    </div>
-                    <div class="row">
-                        <div class="col-6 d-flex justify-content-start">
-                            <h4>Project Name</h4>
-                        </div>
-                        <div class="col-6 d-flex justify-content-end">
-                            <a><i id="heart" class="fa fa-heart"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 container" id="cards" data-aos="fade-left" data-aos-duration="500">
-                    <div class="text-center">
-                        <img style="padding: 10px 0;" width="500px" height="250px" class="img-fluid" src="../../assets/images/slider/hero.png">
-                    </div>
-                    <div class="row">
-                        <div class="col-6 d-flex justify-content-start">
-                            <h4>Project Name</h4>
-                        </div>
-                        <div class="col-6 d-flex justify-content-end">
-                            <a><i id="heart" class="fa fa-heart"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 container" id="cards" data-aos="fade-left" data-aos-duration="500">
-                    <div class="text-center">
-                        <img style="padding: 10px 0;" width="500px" height="250px" class="img-fluid" src="../../assets/images/slider/hero.png">
-                    </div>
-                    <div class="row">
-                        <div class="col-6 d-flex justify-content-start">
-                            <h4>Project Name</h4>
-                        </div>
-                        <div class="col-6 d-flex justify-content-end">
-                            <a><i id="heart" class="fa fa-heart"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Project End -->
 
     <!--footer start-->
     <div class="agency copyright">

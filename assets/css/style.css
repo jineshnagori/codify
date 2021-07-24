@@ -8595,8 +8595,8 @@ a:hover #heart {
     display: flex;
     flex-direction: row;
     margin: 20px 0;
+    padding: 20px 10px;
 }
-  
 .hr-img:before,
 .hr-img:after {
     content: "";
