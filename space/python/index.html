@@ -59,58 +59,7 @@
         </div>
     </header>
     <!-- Nav end-->
-
-    <style>
-        #space-card {
-            border-radius: 20px;
-            background: #ffffff;
-            box-shadow:  6px 6px 10px #d0d0d0,
-                        0 0 0 #ffffff;
-            padding: 20px 10px;
-            height: max-content;
-        }
-        #project-card {
-            border-radius: 20px;
-            background: #ffffff;
-            box-shadow:  6px 6px 10px #d0d0d0,
-                        0 0 0 #ffffff;
-        }
-        .top-creators {
-            width: 80px;
-            border-radius: 50%;
-            margin: 0 10px;
-        }
-        #engage-card {
-            border-radius: 20px;
-            background: #ffffff;
-            box-shadow:  6px 6px 10px #d0d0d0,
-                        0 0 0 #ffffff;
-            padding: 10px 10px;
-            margin-right: 1%;
-        }
-        #hash-card {
-            border-radius: 20px;
-            background: #ffffff;
-            box-shadow:  6px 6px 10px #d0d0d0,
-                        0 0 0 #ffffff;
-            padding: 5px 10px;
-            margin-right: 1%;
-        }
-        #space {
-            z-index: 999;
-        }
-        .project-img {
-            object-fit: fill;
-            height: 100%;
-            border-radius: 20px;
-        }
-        @media (min-width: 991px) {
-            #body-space {
-                overflow: hidden;
-            }
-        }
-    </style>
-
+    
     <!-- space -->
     <section class="codify format" id="space">
         <div class="container">
@@ -122,7 +71,7 @@
                             Python is a general-purpose interpreted, interactive, object-oriented, and high-level programming language. It was created by Guido van Rossum during 1985- 1990.
                         </p>
                         <canvas id="myChart"></canvas>
-                        <p class="about-para">
+                        <p style="font-size: 20px; opacity: 0.8; margin-top: 15px;" class="about-para">
                             Members : 1000
                         </p>
                         <a class="btn btn-default primary-btn event-btn">Join Now</a>
@@ -137,7 +86,7 @@
                         <h6 class="borders-before mb-0" style="padding: 30px 15px 10px 0px;">
                             <span>Top Creators</span>
                         </h6>
-                        <div class=" p-0">
+                        <div class="p-0">
                             <img class="top-creators" class="img-fluid" src="../../assets/images/team/l3-2.png" alt="">
                             <img class="top-creators" class="img-fluid" src="../../assets/images/team/l3-2.png" alt="">
                             <img class="top-creators" class="img-fluid" src="../../assets/images/team/l3-2.png" alt="">
@@ -146,7 +95,7 @@
                         <h6 class="borders-before mb-0" style="padding: 30px 15px 10px 0px;">
                             <span>Trending CodeBits</span>
                         </h6>
-                        <div style="overflow-y: scroll; height: calc(100vh - 24px - 40px - 40px);">
+                        <div class="project-card-scroll">
                             <div class="container" id="project-card" data-aos="fade-right" data-aos-duration="500">
                                 <div class="row">
                                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 p-0">
@@ -198,26 +147,68 @@
                                         <h3 class="pb-2">Tic Tac Toe</h3>
                                         <p>Simple Multiplayer Tic Tac Toe Game</p>
                                         <div class="pt-4 pb-2">
-                                            <span id="hash-card" data-aos="fade-right" data-aos-duration="500">
+                                            <span id="hash-card">
                                                 #sockets
                                             </span>
-                                            <span id="hash-card" data-aos="fade-right" data-aos-duration="500">
+                                            <span id="hash-card">
                                                 #threading
                                             </span>
-                                            <span id="hash-card" data-aos="fade-right" data-aos-duration="500">
+                                            <span id="hash-card">
                                                 #pygame
                                             </span>
                                         </div>
                                         <div class="pt-4 pb-2">
-                                            <span id="engage-card" data-aos="fade-right" data-aos-duration="500">
+                                            <span id="engage-card">
                                                 Likes <i class="fa fa-heart-o" aria-hidden="true"></i>
                                                 200k
                                             </span>
-                                            <span id="engage-card" data-aos="fade-right" data-aos-duration="500">
+                                            <span id="engage-card">
                                                 Shares <i class="fa fa-share" aria-hidden="true"></i>
                                                 56k
                                             </span>
-                                            <span id="engage-card" data-aos="fade-right" data-aos-duration="500">
+                                            <span id="engage-card">
+                                                Comments <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                                6k
+                                            </span>
+                                        </div>
+                                        <ul class="pt-4">
+                                            <b>Features</b>
+                                            <li><span>Beautiful and elegant UI using Figma</span> </li>
+                                            <li><span>Classes Oriented Programming</span></li>
+                                            <li><span>Easy to understand and light weight</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><br>
+                            <div class="container" id="project-card">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 p-0">
+                                        <img class="img-fluid project-img" src="../../assets/images/projects/1.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 p-4">
+                                        <h3 class="pb-2">Tic Tac Toe</h3>
+                                        <p>Simple Multiplayer Tic Tac Toe Game</p>
+                                        <div class="pt-4 pb-2">
+                                            <span id="hash-card">
+                                                #sockets
+                                            </span>
+                                            <span id="hash-card">
+                                                #threading
+                                            </span>
+                                            <span id="hash-card">
+                                                #pygame
+                                            </span>
+                                        </div>
+                                        <div class="pt-4 pb-2">
+                                            <span id="engage-card">
+                                                Likes <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                200k
+                                            </span>
+                                            <span id="engage-card">
+                                                Shares <i class="fa fa-share" aria-hidden="true"></i>
+                                                56k
+                                            </span>
+                                            <span id="engage-card">
                                                 Comments <i class="fa fa-commenting-o" aria-hidden="true"></i>
                                                 6k
                                             </span>

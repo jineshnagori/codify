@@ -8592,15 +8592,61 @@ a:hover #heart {
     display: none;
 }
 .hr-img {
-    display: flex;
-    flex-direction: row;
     margin: 20px 0;
     padding: 20px 10px;
 }
-.hr-img:before,
-.hr-img:after {
-    content: "";
-    flex: 1 1;
-    border-bottom: 2px solid #000;
-    margin: auto;
+#space-card {
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow:  6px 6px 10px #d0d0d0,
+                0 0 0 #ffffff;
+    padding: 20px 10px;
+    height: max-content;
+}
+#project-card {
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow:  6px 6px 10px #d0d0d0,
+                0 0 0 #ffffff;
+}
+.top-creators {
+    width: 45px;
+    border-radius: 50%;
+    margin: 0 5px;
+    box-shadow:  2px 2px 4px #d0d0d0,
+                0 0 0 #ffffff;
+}
+#engage-card {
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow:  2px 2px 4px #d0d0d0,
+                0 0 0 #ffffff;
+    padding: 10px 10px;
+    margin-right: 1%;
+}
+#hash-card {
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow:  2px 2px 4px #d0d0d0,
+                0 0 0 #ffffff;
+    padding: 5px 10px;
+    margin-right: 1%;
+}
+#space {
+    z-index: 999;
+}
+.project-img {
+    object-fit: fill;
+    height: 100%;
+    border-radius: 20px;
+}
+@media (min-width: 991px) {
+    #body-space {
+        overflow: hidden;
+    }
+    .project-card-scroll {
+        overflow-y: scroll;
+        height: calc(100vh - 24px - 40px - 40px);
+        padding: 10px 10px 30px 0;
+    }
 }
