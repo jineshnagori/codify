@@ -28,7 +28,7 @@
     <link href="../../assets/css/magnific-popup.css" rel="stylesheet">
 </head>
 
-<body data-offset="50" data-spy="scroll" data-target=".navbar">
+<body id="body-space" data-offset="50" data-spy="scroll" data-target=".navbar">
     <!--loader start-->
     <div class="loader-wrapper">
         <div class="loader">
@@ -46,12 +46,12 @@
     <!--loader end-->
 
     <!-- Nav Start-->
-    <header style="height: 25%;" class="agency nav-fix custom-scroll">
+    <header style="height: 25%;" class="codify nav-fix custom-scroll">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <nav>
-                        <a class="logo-light m-r-auto" href="index.html"><img width=150px; alt="" class="img-fluid"
+                        <a class="logo-light m-r-auto" href="../../index.html"><img width=150px; alt="" class="img-fluid"
                                 src="../../assets/images/logo/2.svg"></a>
                     </nav>
                 </div>
@@ -67,8 +67,7 @@
             box-shadow:  6px 6px 10px #d0d0d0,
                         0 0 0 #ffffff;
             padding: 20px 10px;
-            position: sticky;
-            position: -webkit-sticky;
+            height: max-content;
         }
         #project-card {
             border-radius: 20px;
@@ -113,10 +112,10 @@
     </style>
 
     <!-- space -->
-    <section class="agency format" id="space">
+    <section class="codify format" id="space">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 container" id="space-card" data-aos="fade-left" data-aos-duration="500">
+                <div class="col-lg-3 container" id="space-card">
                     <div class="format-sub-text text-center">
                         <h1 class="hr-img"><img width="70px" src="../../assets/images/langauges/python.png" class="img-fluid"></h1>
                         <p class="about-para">
@@ -147,45 +146,89 @@
                         <h6 class="borders-before mb-0" style="padding: 30px 15px 10px 0px;">
                             <span>Trending CodeBits</span>
                         </h6>
-                        <div class="container" id="project-card" data-aos="fade-right" data-aos-duration="500">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 p-0">
-                                    <img class="img-fluid project-img" src="../../assets/images/projects/1.jpg" alt="">
+                        <div style="overflow-y: scroll; height: calc(100vh - 24px - 40px - 40px);">
+                            <div class="container" id="project-card" data-aos="fade-right" data-aos-duration="500">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 p-0">
+                                        <img class="img-fluid project-img" src="../../assets/images/projects/1.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 p-4">
+                                        <h3 class="pb-2">Tic Tac Toe</h3>
+                                        <p>Simple Multiplayer Tic Tac Toe Game</p>
+                                        <div class="pt-4 pb-2">
+                                            <span id="hash-card" data-aos="fade-right" data-aos-duration="500">
+                                                #sockets
+                                            </span>
+                                            <span id="hash-card" data-aos="fade-right" data-aos-duration="500">
+                                                #threading
+                                            </span>
+                                            <span id="hash-card" data-aos="fade-right" data-aos-duration="500">
+                                                #pygame
+                                            </span>
+                                        </div>
+                                        <div class="pt-4 pb-2">
+                                            <span id="engage-card" data-aos="fade-right" data-aos-duration="500">
+                                                Likes <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                200k
+                                            </span>
+                                            <span id="engage-card" data-aos="fade-right" data-aos-duration="500">
+                                                Shares <i class="fa fa-share" aria-hidden="true"></i>
+                                                56k
+                                            </span>
+                                            <span id="engage-card" data-aos="fade-right" data-aos-duration="500">
+                                                Comments <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                                6k
+                                            </span>
+                                        </div>
+                                        <ul class="pt-4">
+                                            <b>Features</b>
+                                            <li><span>Beautiful and elegant UI using Figma</span> </li>
+                                            <li><span>Classes Oriented Programming</span></li>
+                                            <li><span>Easy to understand and light weight</span></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 p-4">
-                                    <h3 class="pb-2">Tic Tac Toe</h3>
-                                    <p>Simple Multiplayer Tic Tac Toe Game</p>
-                                    <div class="pt-4 pb-2">
-                                        <span id="hash-card" data-aos="fade-right" data-aos-duration="500">
-                                            #sockets
-                                        </span>
-                                        <span id="hash-card" data-aos="fade-right" data-aos-duration="500">
-                                            #threading
-                                        </span>
-                                        <span id="hash-card" data-aos="fade-right" data-aos-duration="500">
-                                            #pygame
-                                        </span>
+                            </div><br>
+                            <div class="container" id="project-card">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 p-0">
+                                        <img class="img-fluid project-img" src="../../assets/images/projects/1.jpg" alt="">
                                     </div>
-                                    <div class="pt-4 pb-2">
-                                        <span id="engage-card" data-aos="fade-right" data-aos-duration="500">
-                                            Likes <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                            200k
-                                        </span>
-                                        <span id="engage-card" data-aos="fade-right" data-aos-duration="500">
-                                            Shares <i class="fa fa-share" aria-hidden="true"></i>
-                                            56k
-                                        </span>
-                                        <span id="engage-card" data-aos="fade-right" data-aos-duration="500">
-                                            Comments <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                                            6k
-                                        </span>
+                                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 p-4">
+                                        <h3 class="pb-2">Tic Tac Toe</h3>
+                                        <p>Simple Multiplayer Tic Tac Toe Game</p>
+                                        <div class="pt-4 pb-2">
+                                            <span id="hash-card" data-aos="fade-right" data-aos-duration="500">
+                                                #sockets
+                                            </span>
+                                            <span id="hash-card" data-aos="fade-right" data-aos-duration="500">
+                                                #threading
+                                            </span>
+                                            <span id="hash-card" data-aos="fade-right" data-aos-duration="500">
+                                                #pygame
+                                            </span>
+                                        </div>
+                                        <div class="pt-4 pb-2">
+                                            <span id="engage-card" data-aos="fade-right" data-aos-duration="500">
+                                                Likes <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                200k
+                                            </span>
+                                            <span id="engage-card" data-aos="fade-right" data-aos-duration="500">
+                                                Shares <i class="fa fa-share" aria-hidden="true"></i>
+                                                56k
+                                            </span>
+                                            <span id="engage-card" data-aos="fade-right" data-aos-duration="500">
+                                                Comments <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                                6k
+                                            </span>
+                                        </div>
+                                        <ul class="pt-4">
+                                            <b>Features</b>
+                                            <li><span>Beautiful and elegant UI using Figma</span> </li>
+                                            <li><span>Classes Oriented Programming</span></li>
+                                            <li><span>Easy to understand and light weight</span></li>
+                                        </ul>
                                     </div>
-                                    <ul class="pt-4">
-                                        <b>Features</b>
-                                        <li><span>Beautiful and elegant UI using Figma</span> </li>
-                                        <li><span>Classes Oriented Programming</span></li>
-                                        <li><span>Easy to understand and light weight</span></li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -197,7 +240,7 @@
     <!-- Language End -->
 
     <!--footer start-->
-    <div class="agency copyright">
+    <div class="codify copyright">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div>
