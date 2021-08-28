@@ -75,11 +75,6 @@ p, a, li, td, th, button {
     text-decoration: underline;
 }
 
-.m-menu .active {
-    color: #4663F6;
-    text-decoration: underline;
-}
-
 @media screen and (max-width: 768px) {
     .pheader {
         display: none !important;
@@ -90,6 +85,11 @@ p, a, li, td, th, button {
         position: fixed !important;
         width: 100% !important;
         background-color: #FFF;
+    }
+
+    .m-menu .active {
+        color: #4663F6;
+        text-decoration: overline;
     }
 
     .menu-icons {
