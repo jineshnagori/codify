@@ -28,6 +28,7 @@ p, a, li, td, th, button {
     height: 80px;
     background-color: #FFF !important;
     position: relative;
+    padding: 0;
 }
 
 .header .row {
@@ -80,11 +81,6 @@ p, a, li, td, th, button {
 .m-icon {
     width: 50px;
     font-size: 20px !important;
-    border-radius: 50%;
-    text-align: center;
-    padding: 10px;
-    display: block;
-    background: rgba(41, 45, 50, 0.06);
 }
 
 .hide-search {
