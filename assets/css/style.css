@@ -68,11 +68,13 @@ p, a, li, td, th, button {
 .menu-icons {
     font-size: 35px;
     padding: 0 30px;
+    transition: transform .2s;
 }
 
 .header .active {
     color: #4663F6;
     text-decoration: underline;
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 768px) {
@@ -85,11 +87,12 @@ p, a, li, td, th, button {
         position: fixed !important;
         width: 100% !important;
         background-color: #FFF;
+        transition: transform .2s;
     }
 
     .m-menu .active {
         color: #4663F6;
-        text-decoration: overline;
+        transform: scale(1.1);
     }
 
     .menu-icons {
