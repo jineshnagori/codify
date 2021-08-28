@@ -112,6 +112,10 @@ p, a, li, td, th, button {
     .menu-icons {
         padding: 0 20px;
     }
+
+    .header, .header .container {
+        height: 60px;
+    }
 }
 
 @media screen and (min-width: 768px) {
