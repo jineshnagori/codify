@@ -78,11 +78,6 @@ p, a, li, td, th, button {
     transform: scale(1.1);
 }
 
-.m-icon {
-    width: 50px;
-    font-size: 25px !important;
-}
-
 @media screen and (max-width: 768px) {
     .p-header {
         display: none !important;
@@ -101,12 +96,17 @@ p, a, li, td, th, button {
         transform: scale(1.1);
     }
 
-    .menu-icons {
-        padding: 0 20px;
-    }
-
     .header, .header .container {
         height: 60px;
+    }
+
+    .img-rounded {
+        border-radius: 50% !important;
+        border: 3px solid #4663F6;
+    }
+
+    .owl-dots {
+        display: none !important;
     }
 }
 
@@ -116,6 +116,10 @@ p, a, li, td, th, button {
     }
 
     .m-menu {
+        display: none !important;
+    }
+
+    .m-story {
         display: none !important;
     }
 }
