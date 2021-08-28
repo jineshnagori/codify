@@ -68,7 +68,7 @@ p, a, li, td, th, button {
 
 .menu-icons {
     font-size: 35px;
-    padding: 0 30px;
+    padding: 0 7%;
     transition: transform .2s;
 }
 
@@ -89,6 +89,7 @@ p, a, li, td, th, button {
         width: 100% !important;
         background-color: #FFF;
         transition: transform .2s;
+        text-align: center;
     }
 
     .m-menu .active {
