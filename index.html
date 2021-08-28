@@ -42,17 +42,11 @@
                     </div>
                 </div>
             </div>
-            <div class="search-header hide-search row">
-                <div class="col-12 search">
-                    <input style="padding-left: 20px; height: 40px;" class="input-field" type="text" placeholder="explore spaces...">
-                    <i style="padding: 3px; font-size: 25px;" id="close-btn" class="ri-close-line icon"></i>
-                </div>
-            </div>
         </div>
     </header>
     <div class="m-menu menu d-flex justify-content-center">
         <i class="ri-home-line menu-icons active"></i>
-        <i id="search-btn" class="ri-search-line menu-search-icons"></i>
+        <i class="ri-search-line menu-icons"></i>
         <i class="ri-apps-line menu-icons"></i>
         <i class="ri-user-line menu-icons"></i>
     </div>
@@ -64,20 +58,6 @@
                 $(this).addClass("active");
             });   
         });
-        const searchBtn = document.getElementById('search-btn')
-        const searchHeader = document.querySelector('.search-header')
-        const closeBtn = document.getElementById('close-btn')
-        const mHeader = document.querySelector('.m-header')
-
-        searchBtn.addEventListener('click', ()=>{
-            searchHeader.classList.remove('hide-search')
-            mHeader.classList.add('hide-search')
-        })
-
-        closeBtn.addEventListener('click', ()=>{
-            searchHeader.classList.add('hide-search')
-            mHeader.classList.remove('hide-search')
-        })
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>

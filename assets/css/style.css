@@ -83,10 +83,6 @@ p, a, li, td, th, button {
     font-size: 25px !important;
 }
 
-.hide-search {
-    display: none !important;
-}
-
 @media screen and (max-width: 768px) {
     .p-header {
         display: none !important;
@@ -107,11 +103,6 @@ p, a, li, td, th, button {
 
     .menu-icons {
         padding: 0 20px;
-    }
-
-    .menu-search-icons {
-        padding: 0 20px;
-        font-size: 35px;
     }
 
     .header, .header .container {
