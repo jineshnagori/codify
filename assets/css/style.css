@@ -22,6 +22,10 @@ p, a, li, td, th, button {
     font-weight: 300;
 }
 
+.m-10 {
+    margin: 10px 10px 70px 10px;
+}
+
 .header, .header .container {
     width: 100%;
     height: 80px;
@@ -122,6 +126,7 @@ p, a, li, td, th, button {
         width: 100%;
         height: max-content;
         position: relative;
+        margin-bottom: 15px;
     }
 
     .card .top {
@@ -203,25 +208,6 @@ p, a, li, td, th, button {
         font-size: 14px !important;
         margin-top: 10px;
         color: #999;
-    }
-
-    .addComments {
-        display: flex;
-        align-items: center;
-        margin-top: 10px;
-    }
-
-    .text {
-        width: 100%;
-        border: none;
-        outline: none;
-        font-weight: 400 !important;
-        font-size: 16px !important;
-        color: #262626;
-    }
-
-    .text::placeholder {
-        color: #777 !important;
     }
 
     .postTime {
