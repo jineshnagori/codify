@@ -119,7 +119,7 @@ p, a, li, td, th, button {
     .card {
         background: #FFF;
         padding: 20px;
-        width: 360px;
+        width: 100%;
         height: max-content;
         position: relative;
     }
