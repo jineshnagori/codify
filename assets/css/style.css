@@ -5,7 +5,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 body {
@@ -83,8 +82,16 @@ p, a, li, td, th, button {
     }
     
     .m-menu {
-        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        z-index: 99 !important;
         position: fixed !important;
+    }
+
+    .menu {
+        position: -webkit-sticky;
+        position: sticky;
+        bottom: 0 !important;
         width: 100% !important;
         background-color: #FFF;
         transition: transform .2s;
@@ -108,6 +115,121 @@ p, a, li, td, th, button {
     .owl-dots {
         display: none !important;
     }
+
+    .card {
+        background: #FFF;
+        padding: 20px;
+        width: 360px;
+        height: max-content;
+        position: relative;
+    }
+
+    .card .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .profile_img {
+        position: relative;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 8px;
+    }
+    
+    .card .top .userDetails h3 {
+        font-size: 16px !important;
+        color: #4d4d4f;
+        line-height: 1em !important;
+    }
+
+    .card .top .userDetails h3 span {
+        font-size: 0.75em !important;
+    }
+
+    .dot {
+        transform: scale(0.6);
+        cursor: pointer;
+    }
+
+    .cover {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .imgBx {
+        margin-top: 10px;
+    }
+
+    .actionBtns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .actionBtns i {
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .likes {
+        font-weight: 500 !important;
+        margin-top: 5px;
+        font-size: 16px !important;
+        color: #4d4d4f;
+    }
+
+    .message {
+        font-weight: 400 !important;
+        font-size: 15px !important;
+        margin-top: 5px;
+        color: #777;
+        line-height: 1.5em !important;
+    }
+
+    .message b {
+        color: #262626
+    }
+
+    .message span {
+        color: #4663F6;
+    }
+
+    .comments {
+        font-weight: 400 !important;
+        font-size: 14px !important;
+        margin-top: 10px;
+        color: #999;
+    }
+
+    .addComments {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .text {
+        width: 100%;
+        border: none;
+        outline: none;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        color: #262626;
+    }
+
+    .text::placeholder {
+        color: #777 !important;
+    }
+
+    .postTime {
+        font-weight: 500 !important;
+        color: #777 !important;
+        font-size: 16px !important;
+        margin-top: 10px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -120,6 +242,10 @@ p, a, li, td, th, button {
     }
 
     .m-story {
+        display: none !important;
+    }
+
+    .m-post {
         display: none !important;
     }
 }
