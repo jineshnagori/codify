@@ -126,12 +126,24 @@ p, a, li, td, th, button {
     }
 
     .img-rounded {
-        border-radius: 50% !important;
-        border: 3px solid #4663F6;
+        border-radius: 30% !important;
+        box-shadow: 0 5px 5px 0 #d4d4d4;
     }
 
     .owl-dots {
         display: none !important;
+    }
+
+    .m-post {
+        border-radius: 5px 25px 25px 25px;
+    }
+
+    .save-btn {
+        position: absolute;
+        right: 12%;
+        bottom: 75%;
+        color: white;
+        font-size: 20px;
     }
 
     .card {
@@ -153,7 +165,7 @@ p, a, li, td, th, button {
         position: relative;
         width: 36px;
         height: 36px;
-        border-radius: 50%;
+        border-radius: 30%;
         overflow: hidden;
         margin-right: 8px;
     }
@@ -168,6 +180,10 @@ p, a, li, td, th, button {
         font-size: 0.75em !important;
     }
 
+    .actionBtns {
+        margin-top: 15px;
+    }
+
     .dot {
         transform: scale(0.6);
         cursor: pointer;
@@ -177,10 +193,18 @@ p, a, li, td, th, button {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        border-radius: 5px 25px;
+        box-shadow: 0 5px 5px 0 #d4d4d4;
     }
 
     .imgBx {
         margin-top: 10px;
+    }
+
+    .btn-article {
+        border-radius: 25px 5px 25px 25px;
+        color: #E5E5E5;
+        background-color: #262626;
     }
 
     .actionBtns {
@@ -229,6 +253,17 @@ p, a, li, td, th, button {
         color: #777 !important;
         font-size: 16px !important;
         margin-top: 10px;
+    }
+
+    .left span {
+        font-size: 15px;
+        padding-left: 10%;
+    }
+
+    .left i {
+        display: flex;
+        align-items: center;
+        padding-right: 15%;
     }
 }
 

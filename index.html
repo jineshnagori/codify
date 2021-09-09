@@ -14,46 +14,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 </head>
 <body>
-    
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="p-header row">
-                <div class="col-lg-3">
-                    <h1>Codify</h1>
-                </div>
-                <div class="col-lg-5 menu d-flex justify-content-center">
-                    <i class="ri-home-line menu-icons active"></i>
-                    <i class="ri-apps-line menu-icons"></i>
-                    <i class="ri-user-line menu-icons"></i>
-                    <i class="ri-chat-1-line menu-icons"></i>
-                </div>
-                <div class="col-lg-4 d-flex justify-content-end">
-                    <div class="search">
-                        <i class="ri-search-line icon"></i>
-                        <input class="input-field" type="text" placeholder="explore spaces...">
-                    </div>
-                </div>
-            </div>
-            <div class="m-header row m-0">
-                <div class="col-6 d-flex justify-content-start">
-                    <h1>Codify</h1>
-                </div>
-                <div class="col-6 d-flex justify-content-end">
-                    <div class="search">
-                        <i class="ri-chat-1-line menu-icons" style="padding-right: 0;"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
 
     <div class="content">
         <!-- Mobile Home -->
         <section class="home section-hide">
+            <!-- Header -->
+            <header class="header">
+                <div class="container">
+                    <div class="m-header row m-0">
+                        <div class="col-6 d-flex justify-content-start">
+                            <h1>Codify</h1>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end">
+                            <div class="search">
+                                <i class="ri-chat-1-line menu-icons" style="padding-right: 0;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
             <!-- Stories -->
             <div class="m-story">
                 <div class="owl-carousel owl-theme pt-2">
+                    <div class="item p-2">
+                        <img class="img-fluid img-rounded" src="assets/images/story/1.jpg" alt="">
+                    </div>
+                    <div class="item p-2">
+                        <img class="img-fluid img-rounded" src="assets/images/story/1.jpg" alt="">
+                    </div>
+                    <div class="item p-2">
+                        <img class="img-fluid img-rounded" src="assets/images/story/1.jpg" alt="">
+                    </div>
                     <div class="item p-2">
                         <img class="img-fluid img-rounded" src="assets/images/story/1.jpg" alt="">
                     </div>
@@ -97,21 +88,18 @@
                     </div>
                     <div class="imgBx">
                         <img class="cover" src="assets/images/story/1.jpg" alt="">
+                        <i class="ri-bookmark-line save-btn"></i>
                     </div>
                     <div class="actionBtns">
-                        <div class="left">
-                            <i class="ri-heart-line"></i>
-                            <i class="ri-chat-3-line"></i>
-                            <i class="ri-share-line"></i>
+                        <div class="left d-flex">
+                            <i class="ri-heart-line"><span>1K</span></i>
+                            <i class="ri-chat-3-line"><span>1K</span></i>
+                            <i class="ri-share-line"><span>1K</span></i>
                         </div>
                         <div class="right">
-                            <i class="ri-bookmark-line"></i>
+                            <a href="#" class="btn btn-article">View Article</a>
                         </div>
                     </div>
-                    <h4 class="likes">696969 likes</h4>
-                    <h4 class="message"><b>salman_love_katrina</b> I Love Katrina So Much <span>#loveyou</span> <span>#salman_loves_katrina</span></h4>
-                    <h4 class="comments">View all 69 comments</h4>
-                    <h5 class="postTime">69 hours ago</h5>
                 </div>
             
                 <div class="m-post card">
@@ -128,21 +116,19 @@
                     </div>
                     <div class="imgBx">
                         <img class="cover" src="assets/images/story/1.jpg" alt="">
+                        <i class="ri-bookmark-line save-btn"></i>
                     </div>
                     <div class="actionBtns">
-                        <div class="left">
-                            <i class="ri-heart-line"></i>
-                            <i class="ri-chat-3-line"></i>
-                            <i class="ri-share-line"></i>
+                        <div class="left d-flex">
+                            <i class="ri-heart-line"><span>1K</span></i>
+                            <i class="ri-chat-3-line"><span>1K</span></i>
+                            <i class="ri-share-line"><span>1K</span></i>
                         </div>
                         <div class="right">
-                            <i class="ri-bookmark-line"></i>
+                            <!-- view article button -->
+                            <a href="#" class="btn btn-article">View Article</a>
                         </div>
                     </div>
-                    <h4 class="likes">696969 likes</h4>
-                    <h4 class="message"><b>salman_love_katrina</b> I Love Katrina So Much <span>#loveyou</span> <span>#salman_loves_katrina</span></h4>
-                    <h4 class="comments">View all 69 comments</h4>
-                    <h5 class="postTime">69 hours ago</h5>
                 </div>
             </div>
         </section>
@@ -153,6 +139,16 @@
 
         <!-- Mobile Activity -->
         <section class="activity section-hide mb-10">
+            <!-- Header -->
+            <header class="header">
+                <div class="container">
+                    <div class="m-header row m-0">
+                        <div class="col-6 d-flex justify-content-start">
+                            <h1>Activity</h1>
+                        </div>
+                    </div>
+                </div>
+            </header>
             <div class="card mb-0">
                 <div class="userDetails d-flex align-items-center">
                     <div class="profile_img">
@@ -303,7 +299,7 @@
         $('.owl-carousel').owlCarousel({
             responsive: {
                 0: {
-                    items: 5
+                    items: 5.5
                 },
                 600: {
                     items: 5
