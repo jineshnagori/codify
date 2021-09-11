@@ -138,12 +138,25 @@ p, a, li, td, th, button {
         border-radius: 25px;
     }
 
+    .m-article {
+        border-radius: 25px;
+        display: none;
+    }
+
     .save-btn {
         position: absolute;
         right: 12%;
         bottom: 75%;
         color: white;
         font-size: 20px;
+    }
+
+    .back-btn {
+        position: absolute;
+        right: 89%;
+        bottom: 94%;
+        color: white;
+        font-size: 25px;
     }
 
     .card {

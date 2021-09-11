@@ -27,8 +27,8 @@
                             <h1>Codify</h1>
                         </div>
                         <div class="col-6 d-flex justify-content-end">
-                            <div class="search">
-                                <i class="ri-chat-1-line menu-icons show" style="padding-right: 0;"></i>
+                            <div class="chat">
+                                <i class="ri-chat-1-line menu-icons chat-btn" style="padding-right: 0;"></i>
                             </div>
                         </div>
                     </div>
@@ -98,36 +98,26 @@
                             <i class="ri-share-line"></i>
                         </div>
                         <div class="right">
-                            <a href="#" class="btn btn-article">View Article</a>
+                            <button class="btn btn-article">View Article</button>
                         </div>
                     </div>
                 </div>
-            
-                <div class="m-post card">
-                    <div class="top">
-                        <div class="userDetails  d-flex align-items-center">
-                            <div class="profile_img">
-                                <img width="50px" src="assets/images/story/1.jpg" alt="">
-                            </div>
-                            <h3>salman_love_katrina<br><span>Mumbai, India</span></h3>
-                        </div>
-                        <div>
-                            <i class="ri-more-2-fill dot"></i>
-                        </div>
-                    </div>
-                    <div class="imgBx">
-                        <img class="cover" src="assets/images/story/1.jpg" alt="">
-                        <i class="ri-bookmark-line save-btn"></i>
-                    </div>
-                    <div class="actionBtns">
-                        <div class="left d-flex">
+
+                <div class="m-article card p-0">
+                    <img class="cover" src="assets/images/story/1.jpg" alt="">
+                    <i class="ri-arrow-left-circle-line back-btn"></i>
+                    <div class="article p-4">
+                        <div class="d-flex justify-content-around mb-2" style="font-size: 25px;">
                             <i class="ri-heart-line"></i>
                             <i class="ri-chat-3-line"></i>
                             <i class="ri-share-line"></i>
                         </div>
-                        <div class="right">
-                            <!-- view article button -->
-                            <a href="#" class="btn btn-article">View Article</a>
+                        <!-- article content -->
+                        <div class="content">
+                            <!-- article heading -->
+                            <h3 class="mb-2">How to make a website in 2020</h3>
+                            <!-- article description -->
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi repudiandae officia, libero minus saepe consectetur nesciunt harum fugiat magni sed odio aspernatur corrupti consequuntur quae, beatae ipsam delectus a necessitatibus. </p>
                         </div>
                     </div>
                 </div>
@@ -258,16 +248,35 @@
 
         <!-- Mobile Profile -->
         <section class="profile section-hide">
-        </section>    
+        </section>
+        
+        <div class="m-menu menu">
+            <i class="ri-home-line menu-icons active show"></i>
+            <i class="ri-search-line menu-icons"></i>
+            <i class="ri-notification-badge-line menu-icons"></i>
+            <i class="ri-user-line menu-icons"></i>
+        </div>
     </div>
 
-    <div class="m-menu menu">
-        <i class="ri-home-line menu-icons active show"></i>
-        <i class="ri-search-line menu-icons"></i>
-        <i class="ri-notification-badge-line menu-icons"></i>
-        <i class="ri-user-line menu-icons"></i>
-    </div>
+    <!-- Mobile chat -->
+    <section class="chat">
+    </section>
 
+    <script>
+        $('body').on("click touchstart", ".btn-article", function(e){
+            $(".m-post, .m-article").toggle();
+        });
+    </script>
+    <script>
+        $('body').on("click touchstart", ".chat-btn", function(e){
+            $(".content, .chat").toggle();
+        });
+    </script>
+    <script>
+        $('body').on("click touchstart", ".back-btn", function(e){
+            $(".m-article, .m-post").toggle();
+        });
+    </script>
     <script>
         $('.menu-icons').first().addClass('show');
 
