@@ -135,11 +135,11 @@ p, a, li, td, th, button {
     }
 
     .m-post {
-        border-radius: 25px;
+        border-radius: 15px;
     }
 
     .m-article {
-        border-radius: 25px;
+        border-radius: 15px;
         display: none;
     }
 
@@ -206,7 +206,7 @@ p, a, li, td, th, button {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 25px;
+        border-radius: 15px;
     }
 
     .imgBx {
@@ -214,7 +214,7 @@ p, a, li, td, th, button {
     }
 
     .btn-article {
-        border-radius: 25px;
+        border-radius: 15px;
         color: #E5E5E5;
         background-color: #262626;
     }
