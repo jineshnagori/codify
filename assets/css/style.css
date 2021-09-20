@@ -143,6 +143,44 @@ p, a, li, td, th, button {
         display: none;
     }
 
+    .m-comment {
+        height: 510px !important;
+        border-radius: 15px;
+        display: none;
+    }
+
+    .back-cmt-btn {
+        position: absolute;
+        right: 89%;
+        bottom: 91%;
+        color: #000;
+        font-size: 25px;
+    }
+
+    .comment {
+        padding-top: 115% !important;
+    }
+
+    .comment input:focus {
+        outline: none !important;
+        border: #d4d4d4 solid 1px !important;
+        box-shadow: none !important;
+    }
+
+    .comment i {
+        padding-left: 10px;
+    }
+
+    .send-btn {
+        font-size: 25px !important;
+    }
+
+    .comment-content input {
+        border-radius: 15px;
+        border: none;
+        box-shadow: 0 5px 5px 0 #d4d4d4;
+    }
+    
     .save-btn {
         position: absolute;
         right: 12%;

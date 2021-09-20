@@ -94,7 +94,7 @@
                     <div class="actionBtns">
                         <div class="left d-flex">
                             <i class="ri-heart-line"></i>
-                            <i class="ri-chat-3-line"></i>
+                            <i class="ri-chat-3-line btn-comment"></i>
                             <i class="ri-share-line"></i>
                         </div>
                         <div class="right">
@@ -109,7 +109,7 @@
                     <div class="article p-4">
                         <div class="d-flex justify-content-around mb-2" style="font-size: 25px;">
                             <i class="ri-heart-line"></i>
-                            <i class="ri-chat-3-line"></i>
+                            <i class="ri-chat-3-line comment-btn"></i>
                             <i class="ri-share-line"></i>
                         </div>
                         <!-- article content -->
@@ -118,6 +118,16 @@
                             <h3 class="mb-2">How to make a website in 2020</h3>
                             <!-- article description -->
                             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi repudiandae officia, libero minus saepe consectetur nesciunt harum fugiat magni sed odio aspernatur corrupti consequuntur quae, beatae ipsam delectus a necessitatibus. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m-comment card p-0">
+                    <i class="ri-arrow-left-circle-line back-cmt-btn"></i>
+                    <div class="comment p-4">
+                        <div class="comment-content d-flex align-items-center">
+                            <input type="text" class="form-control" placeholder="Type your comment here...">
+                            <i class="ri-send-plane-fill send-btn"></i>
                         </div>
                     </div>
                 </div>
@@ -275,6 +285,21 @@
     <script>
         $('body').on("click touchstart", ".back-btn", function(e){
             $(".m-article, .m-post").toggle();
+        });
+    </script>
+    <script>
+        $('body').on("click touchstart", ".back-cmt-btn", function(e){
+            $(".m-comment, .m-post").toggle();
+        });
+    </script>
+    <script>
+        $('body').on("click touchstart", ".btn-comment", function(e){
+            $(".m-post, .m-comment").toggle();
+        });
+    </script>
+    <script>
+        $('body').on("click touchstart", ".comment-btn", function(e){
+            $(".m-article, .m-comment").toggle();
         });
     </script>
     <script>
